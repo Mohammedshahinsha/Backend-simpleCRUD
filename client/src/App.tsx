@@ -13,13 +13,13 @@ function Router() {
           <h1 className="text-xl font-bold text-blue-600">Student API</h1>
           <ul className="flex space-x-4">
             <li>
-              <Link href="/">
-                <a className="text-blue-600 hover:underline">Dashboard</a>
+              <Link href="/" className="text-blue-600 hover:underline">
+                Dashboard
               </Link>
             </li>
             <li>
-              <Link href="/postman">
-                <a className="text-blue-600 hover:underline">Postman Testing</a>
+              <Link href="/postman" className="text-blue-600 hover:underline">
+                Postman Testing
               </Link>
             </li>
           </ul>

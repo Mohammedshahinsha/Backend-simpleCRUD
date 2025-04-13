@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postman - GET /students</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .postman-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      overflow: hidden;
+    }
+    .postman-header {
+      background-color: #f26b3a;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
+    .postman-header h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .postman-header img {
+      height: 30px;
+      margin-right: 10px;
+    }
+    .request-section {
+      padding: 20px;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .url-bar {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .method-badge {
+      background-color: #3b82f6;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-right: 10px;
+      width: 70px;
+      text-align: center;
+    }
+    .url-input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .send-button {
+      padding: 8px 15px;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .request-body, .response-body {
+      background-color: #f3f4f6;
+      padding: 15px;
+      border-radius: 4px;
+      overflow: auto;
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    .response-section {
+      padding: 20px;
+    }
+    .response-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      background-color: #22c55e;
+    }
+    .request-tab {
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    .request-tab h3 {
+      margin-top: 0;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <div class="postman-container">
+    <div class="postman-header">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wQJEhQJ6VZ3CQAAAVdJREFUaN7tmi1SwzAUx3+TUeIqcAE6wIFs6QVKBydpBYfBA1BxAA6AqGBkJnMADsBMuQBdBi/TZWlCPtrkOe9/RmP1vffT09fLBssxBs7AB6AAKEHUQGi+V8DNuoOdLRnfAR7MeN+Il5KW/JL4egWAo5MwlJK+tArURJKDIrLfPFU4wNUcIFM2yy5PAZDZwHVDe1akKoRIvsUlKlsREAMnxJ0ZSYEjYK+DjwDIgUfgrGksWlLWXfQIXHQZbAHJUHMpM0Wb5VxaFWK3gRjUjG9LPhYgpyZPpDVA5q2NLEC+zWGYtATxLBH+H/JrJVIj/jYgP3bdcifI31wnZVcNsFfkzXLbAhRtf89NwU19+3OhC1Q2kA+TexcMrPjeRVu0+UWHX3IkstDyE6DoyJcj0WS7aN2R9hB/QTIQkIGADARkICADARkIyEDgkPLTYSGVYhTiZfFahKUYFZChwQFwDKF/7Q9rG0IUW3KFfwAAAABJRU5ErkJggg==">
+      <h1>POSTMAN</h1>
+    </div>
+    
+    <div class="request-section">
+      <div class="url-bar">
+        <div class="method-badge">GET</div>
+        <div class="url-input">http://localhost:5000/api/students</div>
+        <button class="send-button">Send</button>
+      </div>
+      
+      
+    </div>
+    
+    <div class="response-section">
+      <div class="response-header">
+        <h3>Response</h3>
+        <div class="status-badge">Status: 200</div>
+      </div>
+      
+      <div class="response-body">
+        <pre>{
+  "success": true,
+  "message": "Students retrieved successfully",
+  "data": [
+    {
+      "name": "John Doe",
+      "rollNumber": "R1001",
+      "email": "john.doe@example.com",
+      "mobile": "1234567890",
+      "id": 1
+    },
+    {
+      "name": "Jane Smith",
+      "rollNumber": "R1002",
+      "email": "jane.smith@example.com",
+      "mobile": "9876543210",
+      "id": 2
+    },
+    {
+      "name": "Alex Johnson",
+      "rollNumber": "R1003",
+      "email": "alex.johnson@example.com",
+      "mobile": "5554443333",
+      "id": 3
+    },
+    {
+      "name": "John Smith",
+      "rollNumber": "R2001",
+      "email": "john.smith@example.com",
+      "mobile": "9876543210",
+      "id": 4
+    }
+  ]
+}</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
