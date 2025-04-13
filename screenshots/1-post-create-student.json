@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:5000/api/students",
+    "body": {
+      "name": "John Smith",
+      "rollNumber": "R2001",
+      "email": "john.smith@example.com",
+      "mobile": "9876543210"
+    }
+  },
+  "response": {
+    "status": 201,
+    "statusText": "Created",
+    "data": {
+      "success": true,
+      "message": "Student added successfully",
+      "data": {
+        "name": "John Smith",
+        "rollNumber": "R2001",
+        "email": "john.smith@example.com",
+        "mobile": "9876543210",
+        "id": 4
+      }
+    }
+  }
+}

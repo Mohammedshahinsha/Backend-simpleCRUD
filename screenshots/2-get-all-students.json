@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:5000/api/students"
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "data": {
+      "success": true,
+      "message": "Students retrieved successfully",
+      "data": [
+        {
+          "name": "John Doe",
+          "rollNumber": "R1001",
+          "email": "john.doe@example.com",
+          "mobile": "1234567890",
+          "id": 1
+        },
+        {
+          "name": "Jane Smith",
+          "rollNumber": "R1002",
+          "email": "jane.smith@example.com",
+          "mobile": "9876543210",
+          "id": 2
+        },
+        {
+          "name": "Alex Johnson",
+          "rollNumber": "R1003",
+          "email": "alex.johnson@example.com",
+          "mobile": "5554443333",
+          "id": 3
+        },
+        {
+          "name": "John Smith",
+          "rollNumber": "R2001",
+          "email": "john.smith@example.com",
+          "mobile": "9876543210",
+          "id": 4
+        }
+      ]
+    }
+  }
+}

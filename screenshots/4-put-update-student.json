@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "http://localhost:5000/api/students/4",
+    "body": {
+      "name": "John Smith Updated",
+      "rollNumber": "R2001",
+      "email": "john.updated@example.com",
+      "mobile": "9876543210"
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "data": {
+      "success": true,
+      "message": "Student updated successfully",
+      "data": {
+        "name": "John Smith Updated",
+        "rollNumber": "R2001",
+        "email": "john.updated@example.com",
+        "mobile": "9876543210",
+        "id": 4
+      }
+    }
+  }
+}

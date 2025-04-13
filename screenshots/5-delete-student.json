@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "DELETE",
+    "url": "http://localhost:5000/api/students/4"
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "data": {
+      "success": true,
+      "message": "Student deleted successfully"
+    }
+  }
+}

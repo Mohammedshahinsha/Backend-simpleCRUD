@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GET /api/students - Get All Students Screenshot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #2563eb;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #4b5563;
+      margin-top: 20px;
+    }
+    h3 {
+      color: #6b7280;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+    .request-info {
+      background-color: #f3f4f6;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .method {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      color: white;
+      margin-right: 10px;
+    }
+    .post { background-color: #10b981; }
+    .get { background-color: #3b82f6; }
+    .put { background-color: #f59e0b; }
+    .delete { background-color: #ef4444; }
+    .url {
+      font-family: monospace;
+      font-size: 16px;
+    }
+    .response-info {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .status {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      color: white;
+      background-color: #22c55e;
+    }
+    pre {
+      background-color: #f1f5f9;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>GET /api/students - Get All Students</h1>
+  
+  <h2>Request</h2>
+  <div class="request-info">
+    <div>
+      <span class="method get">GET</span>
+      <span class="url">http://localhost:5000/api/students</span>
+    </div>
+    
+  </div>
+  
+  <h2>Response</h2>
+  <div class="response-info">
+    <div>
+      <span class="status">200</span>
+      <span>OK</span>
+    </div>
+    <h3>Response Body:</h3>
+    <pre>{
+  "success": true,
+  "message": "Students retrieved successfully",
+  "data": [
+    {
+      "name": "John Doe",
+      "rollNumber": "R1001",
+      "email": "john.doe@example.com",
+      "mobile": "1234567890",
+      "id": 1
+    },
+    {
+      "name": "Jane Smith",
+      "rollNumber": "R1002",
+      "email": "jane.smith@example.com",
+      "mobile": "9876543210",
+      "id": 2
+    },
+    {
+      "name": "Alex Johnson",
+      "rollNumber": "R1003",
+      "email": "alex.johnson@example.com",
+      "mobile": "5554443333",
+      "id": 3
+    },
+    {
+      "name": "John Smith",
+      "rollNumber": "R2001",
+      "email": "john.smith@example.com",
+      "mobile": "9876543210",
+      "id": 4
+    }
+  ]
+}</pre>
+  </div>
+</body>
+</html>
