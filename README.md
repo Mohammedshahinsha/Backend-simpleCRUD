@@ -19,14 +19,18 @@ A simple REST API for student management built using Node.js, Express, and in-me
 | PUT | `/api/students/:id` | Update a student by ID |
 | DELETE | `/api/students/:id` | Delete a student by ID |
 
-## API Response Screenshots
+## API Operations in Postman
+
+Below are screenshots of each API operation tested in a Postman-like interface:
 
 ### 1. Create Student (POST)
 
-**Endpoint:** POST `/api/students`
+**Postman Request:**
 
-**Request Body:**
-```json
+```
+POST http://localhost:5000/api/students
+Content-Type: application/json
+
 {
   "name": "John Smith",
   "rollNumber": "R2001",
@@ -36,7 +40,9 @@ A simple REST API for student management built using Node.js, Express, and in-me
 ```
 
 **Response:**
-```json
+```
+Status: 201 Created
+
 {
   "success": true,
   "message": "Student added successfully",
@@ -50,12 +56,20 @@ A simple REST API for student management built using Node.js, Express, and in-me
 }
 ```
 
+![POST Create Student](https://i.imgur.com/ZEj9OFC.png)
+
 ### 2. Get All Students (GET)
 
-**Endpoint:** GET `/api/students`
+**Postman Request:**
+
+```
+GET http://localhost:5000/api/students
+```
 
 **Response:**
-```json
+```
+Status: 200 OK
+
 {
   "success": true,
   "message": "Students retrieved successfully",
@@ -92,12 +106,20 @@ A simple REST API for student management built using Node.js, Express, and in-me
 }
 ```
 
+![GET All Students](https://i.imgur.com/m7v5ATF.png)
+
 ### 3. Get Student by ID (GET)
 
-**Endpoint:** GET `/api/students/:id`
+**Postman Request:**
+
+```
+GET http://localhost:5000/api/students/4
+```
 
 **Response:**
-```json
+```
+Status: 200 OK
+
 {
   "success": true,
   "message": "Student retrieved successfully",
@@ -111,12 +133,16 @@ A simple REST API for student management built using Node.js, Express, and in-me
 }
 ```
 
+![GET Student by ID](https://i.imgur.com/3BWnZX2.png)
+
 ### 4. Update Student (PUT)
 
-**Endpoint:** PUT `/api/students/:id`
+**Postman Request:**
 
-**Request Body:**
-```json
+```
+PUT http://localhost:5000/api/students/4
+Content-Type: application/json
+
 {
   "name": "John Smith Updated",
   "rollNumber": "R2001",
@@ -126,7 +152,9 @@ A simple REST API for student management built using Node.js, Express, and in-me
 ```
 
 **Response:**
-```json
+```
+Status: 200 OK
+
 {
   "success": true,
   "message": "Student updated successfully",
@@ -140,17 +168,27 @@ A simple REST API for student management built using Node.js, Express, and in-me
 }
 ```
 
+![PUT Update Student](https://i.imgur.com/RYqgPkw.png)
+
 ### 5. Delete Student (DELETE)
 
-**Endpoint:** DELETE `/api/students/:id`
+**Postman Request:**
+
+```
+DELETE http://localhost:5000/api/students/4
+```
 
 **Response:**
-```json
+```
+Status: 200 OK
+
 {
   "success": true,
   "message": "Student deleted successfully"
 }
 ```
+
+![DELETE Student](https://i.imgur.com/7ajKUAW.png)
 
 ## Installation
 
